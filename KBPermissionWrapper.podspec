@@ -36,6 +36,7 @@ s.prepare_command = <<-CMD
     #Pods目录
     echo '😄😄😄😄😄😄😄😄😄😄😄😄'
     podsPath=$(pwd)
+    echo $podsPath
     # echo $podsPath >> /Users/gelei/Downloads/tst.txt
   CMD
   
