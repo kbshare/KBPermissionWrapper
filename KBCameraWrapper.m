@@ -38,6 +38,7 @@
         case AVAuthorizationStatusDenied:
             return KBPermissionAuthorizationStatusDenied;
     }
+    return status;
 }
 - (void)requestCameraPermission:(requestPermResult)requestPermResult{
     
