@@ -98,6 +98,7 @@
         case PHAuthorizationStatusDenied:
             return KBPermissionAuthorizationStatusDenied;
     }
+    return 0;
 }
 
 - (void)requestPhotosPermission:(requestPermResult)requestPermResult{

@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/kbshare/KBPermissionWrapper.git", :tag => "#{s.version}" }
 s.ios.deployment_target = '8.0'
 s.prepare_command = <<-CMD
+                       cat KBAddressBook.h
                        sudo touch a.text
                    CMD
 
