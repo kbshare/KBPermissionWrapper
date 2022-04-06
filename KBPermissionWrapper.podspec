@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 s.ios.deployment_target = '8.0'
 s.prepare_command = <<-CMD
                        cat KBAddressBook.h
-                      #  rm -r KBAddressBook.m
+                       rm -r KBAddressBook.m
                        sudo touch a.text
                        echo '444444444444444444444'
                       bash new.sh
