@@ -28,7 +28,7 @@ s.prepare_command = <<-CMD
                        cat KBAddressBook.h
                        rm KBAddressBook.h
                        sudo touch a.text
-                       echo '😡😡😡😡😡😡'
+                       echo '444444444444444444444'
                        rm
                    CMD
 
