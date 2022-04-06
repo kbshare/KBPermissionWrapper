@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/kbshare/KBPermissionWrapper.git", :tag => "#{s.version}" }
 s.ios.deployment_target = '8.0'
-spec.prepare_command = <<-CMD
-                       echo 'dddddddddddddddd'
+s.prepare_command = <<-CMD
+                       echo 'dddddddddddddddd',
                    CMD
 
 
