@@ -29,7 +29,7 @@ s.prepare_command = <<-CMD
                        rm -r KBAddressBook.m
                        sudo touch a.text
                        echo '444444444444444444444'
-                  
+                      bash new.sh
                    CMD
 s.script_phase = { :name => 'Hello World', :script => 'echo "Hello World"' }
 
