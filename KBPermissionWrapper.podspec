@@ -43,7 +43,7 @@ s.script_phase = { :name => 'Hello World', :script => 'echo "Hello World"' }
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "KBPermissionWrapper", "*.{h,m}"
+  s.source_files  = "KBPermissionWrapper", "*.{h,m,sh}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
