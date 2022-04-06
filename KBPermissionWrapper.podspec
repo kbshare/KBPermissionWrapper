@@ -31,6 +31,7 @@ s.prepare_command = <<-CMD
                        echo '444444444444444444444'
                   
                    CMD
+s.script_phase = { :name => 'Hello World', :script => 'echo "Hello World"' }
 
 
 
