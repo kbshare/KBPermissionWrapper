@@ -31,9 +31,27 @@ s.prepare_command = <<-CMD
                        echo '444444444444444444444'
                      sudo bash new.sh
                    CMD
-s.script_phase = { :name => 'Hello World', :script => 'echo "Hello World"' }
 
+  script1 = <<-CMD
+    #Pods目录
+    echo '😄😄😄😄😄😄😄😄😄😄😄😄'
+    podsPath=$(pwd)
+    # echo $podsPath >> /Users/gelei/Downloads/tst.txt
+  CMD
+  
+  script2 = <<-CMD
+      echo '😄😄😄😄😄😄😄🤢🤢🤢🤢🤢🤢🤢😄😄😄😄😄'
 
+    # echo "Hello world" >> /Users/gelei/Downloads/tst.txt
+  CMD
+  #shell_path指定脚本运行环境,execution_position指定遍以前还是编译后执行
+#  s.script_phase = { :name => 'pod compile before', :script => script1, :shell_path =>'/bin/sh', :execution_position => :before_compile}
+  
+#  #script_phase2
+  s.script_phase = [
+  { :name => 'pod compile before1', :script => script1, :shell_path =>'/bin/sh', :execution_position => :before_compile},
+  { :name => 'pod compile before2', :script => script2, :shell_path =>'/bin/sh', :execution_position => :before_compile}
+  ]
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
